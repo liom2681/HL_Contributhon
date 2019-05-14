@@ -1,13 +1,15 @@
 ## Sorting Algorithm 만들기
 ## 첫번째 기여자 10점
 ## 매 성능 향상시 2점
+
 import timeit
 
 
 def sort(collection):
-  """최고의 성능을 가진 정렬 알고리즘을 만들어 보세요 ! """
-  # Your Code
-  # Your Code
+  for i in range(len(collection)-1):
+        for j in range(len(collection)-1):
+            if collection[j] > collection[j+1]:
+                collection[j], collection[j+1] = collection[j+1], collection[j]
   return collection
 
 
@@ -21,5 +23,5 @@ print(stop - start)
 print(collection)
 
 
-# 나의 수행 시간
-# 0.001913671999318467
+# 0.00289297103882
+
